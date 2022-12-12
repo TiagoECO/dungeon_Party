@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    
+}
+
+body{
+   width: 100%;
+   height: 100vh;
+   font-family:'Poppins', sans-serif;
+   align-items:center;
+   background-image: linear-gradient(to right, #780d21, #3c1223);
+   background-repeat: no-repeat;
+   background-size: cover;
+   overflow-x: hidden;
+   background-position: center;
+     
+}
+.img-logo{
+    display: flex;
+    max-width: 45%;
+    margin-left: 200px;
+    border-radius: 100%;
+}
+
+
+.ajuste-btn-cadastro{
+    display: flex;
+    gap: 14px;
+}
+
+.logo{
+grid-area: logo;
+padding-left: 25%;
+font-size: 40px;
+text-shadow: 50%;
+width: 590px;
+color: #fff;
+z-index: 1;
+
+
+}
+.logo h3{
+    border: 5px solid #00e2bc72;
+    text-align: center;
+    border-radius: 10px;
+    margin-left: -38%;
+    position: fixed;
+}
+.container{
+    display:flex;
+    align-items:center;
+    padding-top: 10%;
+
+  }
+    
+.form{
+    background-color: #521931;
+    border-radius: 10px;
+    padding: 2%;
+    font-size: 0.8em;
+    color: rgb(255, 255, 255);
+    border: 5px solid #00e2bc72;
+    margin-right: 12%;
+}
+
+
+.title{
+    margin-bottom: 20%;
+    font-size: 1.2em;
+    text-align: center;
+    align-items: center;
+}
+
+.input-group{
+    
+    border-radius: 22px;
+    border: 2px solid #00e2bc74;
+    padding: 15px;
+    background-color: #0000006a;
+    margin-left: 11%;
+}
+
+.input-box{
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.password{
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.nickname{
+    padding-top: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+#btn a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+#btn{
+    margin-top: 10%;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    background-color: #00E2BC;
+    width: 100%;
+    height: 40px;
+    border: none;
+    color: aliceblue;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+}
+
+#btn:hover{
+    background-color: #91e5d7;
+}
+
+#log{
+    margin-top: 10%;
+    width: 50%;
+    text-align:left;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+#log a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+#log button{
+    font-family: 'Poppins', sans-serif;
+    background-color: #00E2BC;
+    width: 100%;
+    height: 40px;
+    border: none;
+    color: aliceblue;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+}
+#log :hover{
+    background-color: #91e5d7;
+}
+
+.input-box{
+    padding: 15px 0 0 0;
+}
+.password{
+    padding: 15px 0 0 0;
+}
+.password2{
+    padding: 15px 0 15px 0;
+}
+#dragon{
+    position: absolute;
+    top: 52.5%;
+    right: -540px;
+}
+.login {
+    margin-top: 5%;
+    
+}

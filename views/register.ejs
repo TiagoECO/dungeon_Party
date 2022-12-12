@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../public/assets/styles.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/public/img/Dungeon Party - Logo.png"
+    />
+    <script
+      src="https://kit.fontawesome.com/372326f850.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Cadastrar</title>
+  </head>
+  <body style="background-color: var(--tertiary-color)">
+    <div class="container">
+      <form action="/register" method="post">
+        <div class="display-desktop" style="margin-top: 225px"></div>
+        <div class="row my-5 align-items-center">
+          <div class="col-sm-12 col-md-3 text-center">
+            <figure>
+              <img
+                class="logo"
+                src="../public/img/Dungeon Party - Profile Picture.png"
+              />
+            </figure>
+            <h1 style="color: white">Dungeon Party</h1>
+          </div>
+          <div class="col-md-5 my-5"></div>
+          <div class="col-sm-12 col-md-4">
+            <div class="form p-4">
+              <h2>Cadastrar</h2>
+              <div class="input-group">
+                <div class="nickname">
+                  <i class="fa-solid fa-dragon"></i>
+                  <label>Nickname</label>
+                  <br />
+                  <input
+                    type="text"
+                    name="nickname"
+                    placeholder="Fire Mage Official"
+                  />
+                </div>
+                <div class="input-box">
+                  <i class="fa-solid fa-dragon"></i>
+                  <label>Email</label>
+                  <br />
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="mago@dungeonparty.com"
+                  />
+                </div>
+                <div class="password">
+                  <i class="fa-solid fa-dragon"></i>
+                  <label>Senha</label>
+                  <br />
+                  <input type="password" name="senha" placeholder="password" />
+                </div>
+                <div class="my-3">
+                  <button class="btn btn-login" type="submit">
+                    Cadastre-se
+                  </button>
+                </div>
+                <div class="login"></div>
+                <p>
+                  Já possui conta?
+                  <span>
+                    <a href="/login">Faça o login.</a>
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

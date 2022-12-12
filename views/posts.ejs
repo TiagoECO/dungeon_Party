@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/public/assets/styles.css" rel="stylesheet" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/public/img/Dungeon Party - Logo.png"
+    />
+    <title>Publicações</title>
+  </head>
+  <body>
+    <div id="top"></div>
+    <header>
+      <div class="container mb-2">
+        <div class="row px-3 align-items-center">
+          <div class="col display-desktop">
+            <a href="/">
+              <img
+                class="wordmark"
+                src="/public/img/Dungeon Party - Wordmark.png"
+                alt="Dungeon Party"
+              />
+            </a>
+          </div>
+          <!-- <div class="col display-mobile text-center pt-3">
+            <a href="#top">
+              <img
+                class="logo"
+                src="images/Dungeon Party - Logo.png"
+                alt="Dungeon Party"
+              />
+            </a>
+          </div> -->
+          <nav class="col">
+            <ul class="d-flex justify-content-between">
+              <a href="/">
+                <li class="btn px-3 text-center">Início</li>
+              </a>
+              <a href="#top">
+                <li class="btn px-3 text-center">Publicações</li>
+              </a>
+              <a href="/about-us">
+                <li class="btn px-3 text-center">Sobre nós</li>
+              </a>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- <nav>
+      <ul>
+        <li><a href="/">Index</a></li>
+        <li><a href="/posts">Post</a></li>
+        <li><a href="/cadastro">Cadastro</a></li>
+      </ul>
+    </nav> -->
+
+    <div class="container my-3">
+      <form action="/logout?_method=DELETE" method="post">
+        <div class="text-end">
+          <button class="btn" type="submit">Logout</button>
+        </div>
+      </form>
+    </div>
+    <main class="container my-5">
+      <figure class="my-5 text-center">
+        <img
+          class="logo"
+          src="/public/img/Dungeon Party - Profile Picture.png"
+          alt="Dungeon Party"
+        />
+      </figure>
+      <h1 class="text-center">Publicações</h1>
+      <form action="/postagem" method="post">
+        <div class="form-post m-5">
+          <label for="titulo">
+            <span>Título</span>
+          </label>
+          <br />
+          <input
+            class="form-input"
+            required
+            placeholder="Seu título"
+            name="titulo"
+            style="width: 80%"
+          />
+          <br />
+          <label for="conteudo">
+            <span>Descrição</span>
+          </label>
+          <br />
+          <input
+            class="form-input"
+            required
+            placeholder="No que você está pensando?"
+            name="conteudo"
+            style="width: 80%"
+          />
+          <br />
+          <!-- <select name="" id="">
+        <option value="alho">Alho</option>
+        <option value="cebola">Cebola</option>
+        <option value=""></option>
+        <option value=""></option>
+        <option value=""></option>
+    </select> -->
+          <label for="discordid">
+            <span>Discord ID</span>
+          </label>
+          <br />
+          <input
+            class="form-input"
+            required
+            placeholder="FireMage#0000"
+            type="text"
+            name="discordid"
+          />
+          <div class="my-3">
+            <button class="form-input btn" type="submit">Publicar</button>
+          </div>
+        </div>
+      </form>
+
+      <div class="my-5 text-center">
+        <h3>====================</h3>
+      </div>
+
+      <section class="m-5" id="feed">
+        <% for (var i =0;posts.length > i; i++){ %>
+        <article class="my-5 p-4 pb-0 text-start">
+          <h3><%= posts[i].titulo %></h3>
+          <p><%= posts[i].conteudo %></p>
+          <h5><%= posts[i].discordid %></h5>
+
+          <!-- <img src="public/imagens/postagem-imagens/<%= posts[i].img %>" alt=""> -->
+          <a href="/deletar/<%= posts[i].id %>">
+            <button class="btn my-4">Deletar</button>
+          </a>
+        </article>
+        <!-- <hr /> -->
+        <% } %>
+      </section>
+    </main>
+    <footer class="mt-5">
+      <div class="container">
+        <div class="row p-3 mx-2">
+          <div class="col-12 col-sm-9 text-start">
+            <p>
+              Copyright © 2022 - All rights reserved
+              <br />
+              Dungeon Party
+            </p>
+          </div>
+          <div class="col-12 col-sm-3 text-center">
+            <div class="links">
+              <a href="https://www.instagram.com/partydungeon/" target="_blank">
+                <img
+                  src="/public/img/Instagram White Icon.png"
+                  alt="Instagram"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
